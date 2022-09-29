@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* nav */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav {
+    background-color: #fff;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.627);
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.navItem {
+    width: 80px;
+}
+
+.navLink {
+    width: 100%;
+    height: 100%;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink:hover {
+    border-bottom: 7px solid #007845;
+    transition: .2s;
+}
+
+.navItemActive {
+    background: #007845;
+    height: 10vh;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.navItemActive:hover {
+    background: #034328;
+}
+
+.navLinkActive {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navLogo {
+    height: 10vh;
+    padding: 5px 10px;
+}
+
+
+
+/* header */
+header {
+    height: 50vh;
+    background-size: cover;
+}
+
+
+/* heroIndex */
+.headerIndex {
+    height: 90vh;
+    position: relative;
+    background-image: url(../images/atletico.jpg);
+    background-size: cover;
+}
+
+/* heroNoticias */
+.headerTienda{
+    height: 10vh;
+    background-color: red;
+    margin-bottom: 5px;
+}
+
+/* heroNoticias */
+.heroNoticias {
+    height: 90vh;
+    position: relative;
+    background: #007845;
+}
+
+
+
+/*social media side bar INDEX */
+.sideMenu ul li span{
+    padding: 15px;
+    font-size: 1.5em;
+    color: #111;
+}
+
+
+/* marquee INDEX */
+marquee {
+    background: #fff;
+    height: 10vh;
+}
+.image {
+    height: 80px;
+    padding: 5px 80px;
+}
+
+
+/* main INDEX */
+.containerMain {
+    height: 95vh;
+    background: #007845;
+    overflow: hidden;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    padding: 30px;
+}
+
+h2{
+    text-transform: uppercase;
+    color: #007845;
+    font-size: 24px;
+    padding: 30px;
+}
+
+/* slider noticias INDEX*/
+.containerNoticias {
+    display: flex;
+    height: 100%;
+    text-align: left;
+    justify-content: center;
+}
+
+.cardNoticias {
+    width: 500px;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    max-width: 1200px;
+    display: flex;
+}
+
+.cardNoticias {
+    margin: 0 20px;
+    background: #E9E9E9;
+}
+.cardNoticias:hover{
+    filter:opacity(0.9)
+}
+
+.content .title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #007845;
+    padding: 15px 5px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.content p {
+    text-align: justify;
+    font-size: 14px;
+    padding: 5px 15px 80px 5px;
+}
+
+.img {
+    height: 300px;
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+/* sectionDeporte INDEX*/
+.containerSectionDeportes {
+    height: 40vh;
+    background: #fff;
+}
+
+.navDeportes{
+    height: 40px;
+    background: #E9E9E9;
+    text-align: center;
+}
+
+.titleb {
+    text-transform: uppercase;
+    color: #111;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* sectionSocio INDEX*/
+.containerSectionSocio {
+    height: 70vh;
+    background-image: url(../images/basquetmasc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(17, 17, 17, 0.864);
+    width: 500px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.titlec {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    padding: 0 0 5px 0px;
+}
+
+.textSocio {
+    text-align: justify;
+    color: #fff;
+    padding: 0 0 15px 0px;
+}
+
+.haceteSocio {
+    width: 400px;
+    margin: 20px 0;
+    padding: 12px;
+    background: #007845;
+    border: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.haceteSocio:hover {
+    background: #034328;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+
+/* section Noticias PAGES */
+.buttonContainer{
+    width: 100%;
+    text-align: center;
+}
+.buttonNoticias{
+    background-color: #007845;
+    height: 40px;
+    width: 150px;
+    border: none;
+    margin: 20px 0px;
+}
+
+.aNoticias{
+    font-family: "poppins";
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+
+.buttonNoticias:hover{
+    background-color: #034328;
+}
+
+
+
+/* body NOTICIAS */
+.containerImages{
+    width: 85%;
+    margin: 5px auto;
+    max-height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.element{
+    color: #fff;
+    text-align: end;
+}
+
+.containerImages2{
+    width: 49%;
+ }
+
+.element1{
+    background-image: url(../images/club.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.element1:hover{
+    filter: brightness(.2);
+    transition: .4s;
+}
+
+.containerImages3{
+   width: 49%;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   display: flex;
+}
+
+.element2{
+    background-image: url(../images/hockey2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.element2:hover{
+    filter: brightness(.2);
+    transition: .4s;
+}
+
+.element3{
+    background-image: url(../images/basquetfem2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 250px;
+}
+.element3:hover{
+    filter: brightness(.2);
+    transition: .4s;
+}
+
+.element4{
+    background-image: url(../images/futbolcamis.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 250px;
+}
+.element4:hover{
+    filter: brightness(.2);
+    transition: .4s;
+}
+
+.containerSponsors{
+    width: 67%;
+    margin: 5px auto;
+    max-height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sponsor{
+    width: 330px;
+    height: 100px;
+    margin: 4px;
+}
+
+
+
+/* body DEPORTES */
+.sectionDeportes{
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgDeportes{
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+}
+
+.textDeportes{
+    background: #E9E9E9;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textDeportesMiddle{
+    text-align: right;
+}
+
+.h1Black{
+    color: #111;
+    padding: 0;
+}
+
+b{
+    color: #007845;
+}
+
+.subtitle{
+    color: #111;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+
+/* body CLUB */
+.headerClub{
+    text-align: center;
+}
+
+.textHeaderClub{
+    color: #111;
+    font-weight: 500;
+}
+
+.mainClub{
+    text-align: center;
+    justify-content: center;
+}
+
+.logoClub{
+    height: 150px;
+    margin-top: -60px;
+    padding-bottom: 20px;
+}
+
+.containerTextClub{
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerClub{
+    margin: 0 70px;
+}
+
+.textClub{
+    padding: 40px 80px;
+    text-align: justify;
+}
+
+
+
+/* body TIENDA */
+.titleTienda{
+    padding: 10px 30px;
+}
+
+.containerProductos{
+    display: flex;
+}
+
+.sliderproductos{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardProductos{
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+}
+
+.cardProductos:hover{
+    border: 3px solid #111;
+}
+
+
+
+/* footer INDEX */
+.footerIndex {
+    height: 80vh;
+    background: #fff;
+}
+
+.backgroundClaro {
+    background: #007845;
+    height: 50vh;
+    width: 85%;
+    top: 12em;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    height: 100px;
+    padding: 10px;
+}
+
+.textFooter {
+    color: #fff;
+    padding: 10px;
+}
+
+.socialContainer ul li {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.socialContainer span {
+    color: #eee;
+    font-size: 1.3em;
+}
+
+.mapsFooter {
+    padding: 10px;
+}
+
+li{
+    color: #fff;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.backgroundOscuro {
+    background: #034328;
+    height: 400px;
+}
+
+
+
+/* footer PAGES */
+footer{
+    width: 100%;
+    background: #007845;
+    position: absolute;
+    padding: 2rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerLogoPages{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.socialIcon, .footerUl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 5px;
+}
+
+.socialIconFooter{
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 1rem;
+}
+.socialIconFooter:hover{
+    opacity: .5;
+}
+
+.footerUl{
+    list-style-type: none;
+    color: #fff;
+    font-size: 14px;
+}
+.footerItem{
+    margin: .5rem 1rem;
+    cursor: pointer;
+}
+
+.copyright{
+    color: #eee;
+    text-align: center;
+    }
